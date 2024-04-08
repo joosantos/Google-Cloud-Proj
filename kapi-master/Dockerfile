@@ -32,4 +32,4 @@ EXPOSE 8000
 ENV DATABASE_URL postgres://postgres:123@172.19.0.2:5432/kapi
 
 # Command to run the backend server
-CMD ["poetry", "run", "uvicorn", "app:app", "--host", "0.0.0.0", "--port", "8000"]
+CMD ["sh", "-c", "poetry install && poetry run uvicorn app:app --host 0.0.0.0 --port 8000"]
