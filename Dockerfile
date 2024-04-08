@@ -2,7 +2,7 @@
 FROM postgres:latest
 
 # Create a volume mount point for the database data directory
-VOLUME ./data:/var/lib/postgresql/data
+#VOLUME ./data:/var/lib/postgresql/data
 
 # Copy the database dump file and init script into the container
 COPY dump_file.sql /docker-entrypoint-initdb.d/
