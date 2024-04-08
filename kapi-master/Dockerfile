@@ -29,7 +29,7 @@ COPY . .
 EXPOSE 8000
 
 # Set environment variables
-ENV DATABASE_URL postgres://postgres:123@172.19.0.2:5432/kapi
+ENV DATABASE_URL postgres://postgres2:123@db-postgres-cloud-proj.a.aivencloud.com:11893/kapi?sslmode=require
 
 # Command to run the backend server
 CMD ["sh", "-c", "poetry install && poetry run uvicorn app:app --host 0.0.0.0 --port 8000"]
