@@ -17,7 +17,7 @@ RUN npm install
 COPY . .
 
 # Set the value of VITE_API_URL environment variable
-ENV VITE_API_URL=http://backend:8000
+ENV VITE_API_URL=https://db-server-hjqxpl7fuq-ew.a.run.app:8000
 
 # Expose the port on which the application will run
 EXPOSE 3000
